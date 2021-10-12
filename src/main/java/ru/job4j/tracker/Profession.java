@@ -8,6 +8,16 @@ public class Profession {
      private String education;
      private String birthday;
 
+     public Profession(String name, String surname, String education, String birthday) {
+         this.name = name;
+         this.surname = surname;
+         this.education = education;
+         this.birthday = birthday;
+     }
+
+     public Profession() {
+     }
+
      public String getName() {
          return name;
      }
@@ -47,28 +57,5 @@ public class Profession {
      }
 
      public static void main(String[]args) {
-         Doctor doctor = new Doctor("Rainhold Messner");
-         Dentist dentist = new Dentist(6, "Rainhold Messner");
-         Surgeon surgeon = new Surgeon("руки", "растяжение", "Cathrine Destivelle");
-         Engineer engineer = new Engineer("ПО");
-         Programmer programmer = new Programmer("Kotlin", "приложение Танчики");
-         Builder builder = new Builder("схему", "трубопровода");
-         doctor.setName("Айболит");
-         doctor.setSurname("Рабинович");
-         doctor.setEducation("пластическая хирургия");
-         doctor.setBirthday("20 век н.э.");
-         doctor.showPrint();
-         dentist.reception();
-         dentist.therapy();
-         surgeon.reception();
-         surgeon.diagnose();
-         engineer.setName("Ford");
-         engineer.showPrint();
-         engineer.printInfo();
-         programmer.write();
-         builder.printInfo();
-         builder.build();
-
-
      }
 }
