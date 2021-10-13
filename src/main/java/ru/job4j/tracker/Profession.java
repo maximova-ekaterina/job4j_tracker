@@ -15,9 +15,6 @@ public class Profession {
          this.birthday = birthday;
      }
 
-     public Profession() {
-     }
-
      public String getName() {
          return name;
      }

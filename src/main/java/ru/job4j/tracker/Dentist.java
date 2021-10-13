@@ -8,11 +8,6 @@ public class Dentist extends Doctor {
         this.tooth = tooth;
     }
 
-    public Dentist(int t) {
-        super();
-        this.tooth = t;
-    }
-
     public int getTooth() {
         return tooth;
     }

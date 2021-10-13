@@ -8,14 +8,6 @@ public class Doctor extends Profession {
         this.patient = patient;
     }
 
-    public Doctor(String p) {
-        super();
-        this.patient = p;
-    }
-
-    public Doctor() {
-    }
-
     public String getPatient() {
         return patient;
     }

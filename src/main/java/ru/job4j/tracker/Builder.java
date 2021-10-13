@@ -8,11 +8,6 @@ public class Builder extends Engineer {
         this.plan = plan;
     }
 
-    public Builder(String pl, String proj) {
-        super(proj);
-        this.plan = pl;
-    }
-
     public String getPlan() {
         return plan;
     }

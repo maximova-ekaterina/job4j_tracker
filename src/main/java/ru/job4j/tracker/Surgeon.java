@@ -4,16 +4,10 @@ public class Surgeon extends Doctor {
     private String bodyPart;
     private String diagnosis;
 
-    public Surgeon(String part, String diagnosis, String patient, String name, String surname, String education, String birthday) {
+    public Surgeon(String bodyPart, String diagnosis, String patient, String name, String surname, String education, String birthday) {
         super(patient, name, surname, education, birthday);
-        this.bodyPart = part;
+        this.bodyPart = bodyPart;
         this.diagnosis = diagnosis;
-    }
-
-    public Surgeon(String body, String d, String p) {
-        super(p);
-        this.bodyPart = body;
-        this.diagnosis = d;
     }
 
     public String getDiagnosis() {

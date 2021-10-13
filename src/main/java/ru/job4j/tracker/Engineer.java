@@ -8,10 +8,6 @@ public class Engineer extends Profession {
         this.project = project;
     }
 
-    public Engineer(String proj) {
-        this.project = proj;
-    }
-
     public String getProject() {
         return project;
     }
