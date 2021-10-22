@@ -26,7 +26,7 @@ public class Library {
         System.out.println("Show empty book");
         for (int i = 0; i < books.length; i++) {
             Book cC = books[i];
-            if(cC.getName() == "Clean code") {
+            if("Clean code".equals(cC.getName())) {
                 System.out.println(cC.getName() + "-" + cC.getPageCount());
             }
         }
