@@ -3,7 +3,8 @@ package ru.job4j.tracker;
 public class Dentist extends Doctor {
     private int tooth;
 
-    public Dentist(int tooth, String patient, String name, String surname, String education, String birthday) {
+    public Dentist(int tooth, String patient, String name,
+                   String surname, String education, String birthday) {
         super(patient, name, surname, education, birthday);
         this.tooth = tooth;
     }

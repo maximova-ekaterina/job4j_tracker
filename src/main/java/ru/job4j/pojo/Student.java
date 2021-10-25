@@ -5,7 +5,6 @@ public class Student {
     private String group;
     private String dateOfAdmission;
 
-
     public String getFio() {
         return fio;
     }

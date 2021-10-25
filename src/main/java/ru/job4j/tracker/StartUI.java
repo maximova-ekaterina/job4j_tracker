@@ -12,8 +12,5 @@ public class StartUI {
         DateTimeFormatter restyle = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         String sample = item.getCreated().format(restyle);
         System.out.println("Дата и время после форматирования: " + sample);
-
-
-
     }
 }

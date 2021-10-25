@@ -3,7 +3,8 @@ package ru.job4j.tracker;
 public class Builder extends Engineer {
     private String plan;
 
-    public Builder(String plan, String project, String name, String surname, String education, String birthday) {
+    public Builder(String plan, String project, String name,
+                   String surname, String education, String birthday) {
         super(project, name, surname, education, birthday);
         this.plan = plan;
     }

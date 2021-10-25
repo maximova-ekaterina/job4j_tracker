@@ -3,7 +3,8 @@ package ru.job4j.tracker;
 public class Engineer extends Profession {
     private String project;
 
-    public Engineer(String project, String name, String surname, String education, String birthday) {
+    public Engineer(String project, String name, String surname,
+                    String education, String birthday) {
         super(name, surname, education, birthday);
         this.project = project;
     }

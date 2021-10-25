@@ -11,7 +11,7 @@ public class Library {
         books[0] = fairyTail;
         books[1] = novel;
         books[2] = blank;
-        books[3] = biography;;
+        books[3] = biography;
         for (int i = 0; i < books.length; i++) {
             Book cC = books[i];
             System.out.println(cC.getName() + " " + cC.getPageCount());
@@ -26,7 +26,7 @@ public class Library {
         System.out.println("Show empty book");
         for (int i = 0; i < books.length; i++) {
             Book cC = books[i];
-            if("Clean code".equals(cC.getName())) {
+            if ("Clean code".equals(cC.getName())) {
                 System.out.println(cC.getName() + "-" + cC.getPageCount());
             }
         }
