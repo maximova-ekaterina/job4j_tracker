@@ -38,8 +38,8 @@ public class Tracker {
     public boolean replace(int id, Item item) {
         int i = indexOf(id);
         if (i != -1) {
-            item.setId(id);
             items[i] = item;
+            items[i].setId(id);
         }
         return i != -1;
     }
@@ -58,11 +58,9 @@ public class Tracker {
     public boolean delete(int id) {
         int rsl = indexOf(id);
         items[size - 1] = null;
-        for(int i = 0; i < size; i++) {
-            int start = i + 1;
-            int length = size - i - 1;
+        if (rsl != -1) {
+            System.arraycopy(items, rsl + 1, items, rsl, size - rsl);
             size--;
-            System.arraycopy(items, start, items, i, length);
         }
         return rsl != -1;
     }
