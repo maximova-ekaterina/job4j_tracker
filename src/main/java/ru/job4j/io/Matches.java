@@ -13,10 +13,9 @@ public class Matches {
             System.out.println(player + " enter the number from 1 to 3:");
             int matches = Integer.parseInt(input.nextLine());
             turn = !turn;
-            while (count != 0) {
+            if (matches >= 1 && matches <= 3) {
                 count = count - matches;
                 System.out.println("Remaining matches: " + count);
-                break;
             }
         }
         if (!turn) {
@@ -24,6 +23,7 @@ public class Matches {
         } else {
             System.out.println("The winner is the second player. Congratulations!");
         }
+        input.close();
     }
 }
 
