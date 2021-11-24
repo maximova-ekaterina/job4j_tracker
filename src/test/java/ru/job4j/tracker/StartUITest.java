@@ -125,13 +125,7 @@ public class StartUITest {
                 + "0. Show all items" + ln
                 + "1. Exit program" + ln
                 + "===Show all items===" + ln
-                +  "Item{"
-                        + "id=" + one.getId()
-                        + ", name='" + one.getName() + '\''
-                        + ", created="
-                        + one.getCreated().format(DateTimeFormatter
-                        .ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + '}' + ln
+                +  one + ln
                 + "Menu: " + ln
                 + "0. Show all items" + ln
                 + "1. Exit program" + ln
@@ -158,13 +152,7 @@ public class StartUITest {
                         + "0. Find item by id" + ln
                         + "1. Exit program" + ln
                         + "===Find item by id===" + ln
-                        +  "Item{"
-                        + "id=" + one.getId()
-                        + ", name='" + one.getName() + '\''
-                        + ", created="
-                        + one.getCreated().format(DateTimeFormatter
-                        .ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + '}' + ln
+                        +  one + ln
                         + "Menu: " + ln
                         + "0. Find item by id" + ln
                         + "1. Exit program" + ln
@@ -191,13 +179,7 @@ public class StartUITest {
                         + "0. Find item by name" + ln
                         + "1. Exit program" + ln
                         + "===Find item by name===" + ln
-                        +  "Item{"
-                        + "id=" + one.getId()
-                        + ", name='" + one.getName() + '\''
-                        + ", created="
-                        + one.getCreated().format(DateTimeFormatter
-                        .ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
-                        + '}' + ln
+                        +  one + ln
                         + "Menu: " + ln
                         + "0. Find item by name" + ln
                         + "1. Exit program" + ln
