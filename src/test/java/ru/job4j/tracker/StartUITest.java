@@ -73,7 +73,8 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
                 "Menu: " + System.lineSeparator()
-                        + "0. Exit the program" + System.lineSeparator()
+                        + "0. Exit program" + System.lineSeparator()
+                        + "===Exit program===" + System.lineSeparator()
         ));
     }
 
