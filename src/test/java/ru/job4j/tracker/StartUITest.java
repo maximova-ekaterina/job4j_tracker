@@ -1,11 +1,6 @@
 package ru.job4j.tracker;
 
 import org.junit.Test;
-
-import javax.sound.midi.Track;
-
-import java.time.format.DateTimeFormatter;
-
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 import static org.junit.Assert.assertThat;
@@ -207,5 +202,38 @@ public class StartUITest {
                 + "0. Exit program" + ln
                 + "===Exit program===" + ln
         ));
+    }
+
+    @Test
+    public void whenInvalidInput() {
+        Output out = new StubOutput();
+        Input in = new StubInput(
+                new String[] {"one", "1"}
+        );
+        ValidateInput input = new ValidateInput(out, in);
+        int selected = input.askInt("Menu: ");
+        assertThat(selected, is(1));
+    }
+
+    @Test
+    public void whenMinusInvalidInput() {
+        Output out = new StubOutput();
+        Input in = new StubInput(
+                new String[] {"-1", "-1"}
+        );
+        ValidateInput input = new ValidateInput(out, in);
+        int selected = input.askInt("Please enter validate data again.");
+        assertThat(selected, is(-1));
+    }
+
+    @Test
+    public void whenValidInput() {
+        Output out = new StubOutput();
+        Input in = new StubInput(
+                new String[] {"1", "1"}
+        );
+        ValidateInput input = new ValidateInput(out, in);
+        int selected = input.askInt("Menu: ");
+        assertThat(selected, is(1));
     }
 }
