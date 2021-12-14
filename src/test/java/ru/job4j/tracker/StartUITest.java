@@ -204,36 +204,5 @@ public class StartUITest {
         ));
     }
 
-    @Test
-    public void whenInvalidInput() {
-        Output out = new StubOutput();
-        Input in = new StubInput(
-                new String[] {"one", "1"}
-        );
-        ValidateInput input = new ValidateInput(out, in);
-        int selected = input.askInt("Menu: ");
-        assertThat(selected, is(1));
-    }
 
-    @Test
-    public void whenMinusInvalidInput() {
-        Output out = new StubOutput();
-        Input in = new StubInput(
-                new String[] {"-1", "-1"}
-        );
-        ValidateInput input = new ValidateInput(out, in);
-        int selected = input.askInt("Please enter validate data again.");
-        assertThat(selected, is(-1));
-    }
-
-    @Test
-    public void whenValidInput() {
-        Output out = new StubOutput();
-        Input in = new StubInput(
-                new String[] {"2", "1"}
-        );
-        ValidateInput input = new ValidateInput(out, in);
-        int selected = input.askInt("Menu: ");
-        assertThat(selected, is(2));
-    }
 }
