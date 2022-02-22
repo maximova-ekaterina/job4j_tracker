@@ -6,7 +6,6 @@ import java.util.List;
 public class Tracker {
     private final List<Item> items = new ArrayList<>(100);
     private int ids = 1;
-    private int size = 0;
 
     public Item add(Item item) {
         item.setId(ids++);
@@ -37,9 +36,8 @@ public class Tracker {
         int i = indexOf(id);
         boolean rsl = i != -1;
         if (rsl) {
-            //item.setId(id);
+            item.setId(id);
             items.set(i, item);
-            items.get(i).setId(id);
         }
         return rsl;
     }
