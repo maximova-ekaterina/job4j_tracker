@@ -16,14 +16,6 @@ public class Order {
     }
 
     @Override
-    public String toString() {
-        return "Order{"
-                + "number='" + number + '\''
-                + ", name='" + name + '\''
-                + '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) {
             return true;
@@ -39,5 +31,13 @@ public class Order {
     @Override
     public int hashCode() {
         return Objects.hash(number, name);
+    }
+
+    @Override
+    public String toString() {
+        return "Order{"
+                + "number='" + number + '\''
+                + ", name='" + name + '\''
+                + '}';
     }
 }
