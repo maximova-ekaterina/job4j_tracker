@@ -33,8 +33,7 @@ public class User implements Comparable<User> {
         int rsl = this.name.compareTo(o.name);
         if (rsl == 0) {
             return Integer.compare(this.age, o.age);
-        } else {
-            return rsl;
         }
+        return rsl;
     }
 }
