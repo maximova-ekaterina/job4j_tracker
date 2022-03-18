@@ -22,10 +22,10 @@ public class JobTest {
     @Test
     public void whenAscByNameAndPriority() {
         Comparator<Job> cmpNamePriority
-                = new JobAscByPriority().thenComparing(new JobAscByPriority());
+                = new JobAscByName().thenComparing(new JobAscByPriority());
         int rsl = cmpNamePriority.compare(
                 new Job("Jul Vern", 4),
-                new Job("Mark Tven", 3)
+                new Job("Jul Vern", 3)
         );
         assertThat(rsl, greaterThan(0));
     }
